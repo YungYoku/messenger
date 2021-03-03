@@ -41,8 +41,7 @@ export default {
 <style scoped>
 #tabsWrap {
   border-right: 3px solid #1c1c1c;
-  overflow-x: hidden;
-  overflow-y: scroll;
+  overflow: hidden;
   min-width: 150px;
 }
 
@@ -66,5 +65,13 @@ export default {
 #newMessageTab:hover {
   background-color: #1c1c1c;
 }
+
+@media (max-width: 700px) {
+  #tabsWrap {
+    min-width: 75px;
+    width: 75px;
+  }
+}
+
 
 </style>

@@ -30,7 +30,8 @@ export default {
           'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-          message: msg
+          message: msg,
+          name: store.getters['messenger/name']
         })
       })
     }
@@ -42,7 +43,8 @@ export default {
         messages.value = await Object.keys(data).map(key => {
           return {
             id: key,
-            msgs: data[key].message
+            msgs: data[key].message,
+            name: data[key].name
           }
         })
 
@@ -88,6 +90,8 @@ export default {
 <style scoped>
 #wrap {
   display: grid;
-  grid-template: 644px 56px / 1fr;
+  overflow: hidden;
+  position: relative;
+  grid-template: calc(100% - 50px) 50px / 1fr;
 }
 </style>

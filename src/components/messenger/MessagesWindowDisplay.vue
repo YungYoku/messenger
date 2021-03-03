@@ -1,6 +1,6 @@
 <template>
   <div id="messagesWindowWrap">
-    <the-message v-for="message in messages" :key="message.id">
+    <the-message v-for="message in messages" :key="message.id" :name="message.name">
       {{ message.msgs }}
     </the-message>
   </div>
@@ -35,12 +35,15 @@ export default {
 
 <style>
 #messagesWindowWrap {
-  overflow-x: hidden;
-  overflow-y: scroll;
   width: 100%;
   height: 100%;
-  padding: 10px;
+  padding: 10px 20px 10px 10px;
+  position: relative;
+  top: 0;
+  right: -24px;
   display: flex;
+  overflow-y: scroll;
+  overflow-x: hidden;
   flex-direction: column-reverse;
 }
 </style>

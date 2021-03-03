@@ -57,15 +57,18 @@ export default {
   top: 0;
   left: 0;
   z-index: 5;
-  background-color: #3F6777;
+  background-color: #79DAC2;
   padding: 40px 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 #loginRegistration h3 {
   text-align: center;
-  font-size: 30px;
-  color: white;
-
+  font-size: 36px;
+  color: #2c4f4f;
 }
 
 #inputWrap {
@@ -77,24 +80,30 @@ export default {
 #loginRegistration input {
   width: 100%;
   height: 60px;
-  border: 5px solid #2f5368;
-  border-radius: 5px;
+  border: none;
+  border-radius: 40px;
   margin-top: 60px;
   padding: 5px 10px;
   font-size: 20px;
   user-select: text;
   text-align: center;
+  background-color: #5faaaa;
 }
 
 #loginBtn {
   border: none;
   border-radius: 30px;
   width: 14%;
-  height: 40px;
+  min-width: 120px;
+  height: 46px;
   margin: 60px 43% 0 43%;
-  background-color: white;
+  background-color: #5faaaa;
   font-size: 20px;
   transition: all 0.2s;
+  color: #2c4f4f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 #loginBtn:hover {
   transform: scale(1.05);

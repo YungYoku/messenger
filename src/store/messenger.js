@@ -5,7 +5,8 @@ export default {
       messages: [
         {
           id: "tab1",
-          msgs: []
+          msgs: [],
+          name: ''
         }
       ],
       currentTab: 1,

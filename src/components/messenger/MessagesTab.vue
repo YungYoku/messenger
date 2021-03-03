@@ -35,4 +35,10 @@ export default {}
   border-radius: 50%;
   margin-right: 10px;
 }
+
+@media (max-width: 700px) {
+  .wrap h3 {
+    display: none;
+  }
+}
 </style>

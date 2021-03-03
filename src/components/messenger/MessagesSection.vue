@@ -36,14 +36,11 @@ export default {
 
 <style scoped>
 section {
-  border: 3px solid #1c1c1c;
-  border-radius: 5px;
-  width: 80%;
-  height: 700px;
-  margin: 54px 10% 0 10%;
+  width: 100%;
+  height: 100vh;
   display: grid;
   grid-template: 100% / 1fr 6fr;
-  background-color: #3F6777;
+  background-color: #79DAC2;
   position: relative;
 }
 </style>
